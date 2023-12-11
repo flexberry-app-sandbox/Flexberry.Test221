@@ -1,0 +1,106 @@
+﻿{
+  "name": "IISTest22тест",
+  "modelName": "i-i-s-test22-тест",
+  "className": "тест",
+  "nameSpace": "IIS.Test22",
+  "parentModelName": null,
+  "parentClassName": null,
+  "attrs": [
+    {
+      "name": "цена",
+      "type": "number",
+      "flexberryType": "int",
+      "notNull": false,
+      "defaultValue": "",
+      "stored": true,
+      "ordered": false
+    }
+  ],
+  "belongsTo": [
+    {
+      "polymorphic": false,
+      "presence": true,
+      "name": "ном",
+      "relatedTo": "i-i-s-test22-ном",
+      "inverse": null
+    }
+  ],
+  "hasMany": [],
+  "projections": [
+    {
+      "name": "тестE",
+      "modelName": "i-i-s-test22-тест",
+      "attrs": [
+        {
+          "name": "цена",
+          "caption": "Цена",
+          "hidden": false,
+          "index": 0
+        }
+      ],
+      "belongsTo": [
+        {
+          "lookupValue": null,
+          "lookupValueField": null,
+          "relationName": "ном",
+          "belongsTo": [
+            {
+              "lookupValue": null,
+              "lookupValueField": null,
+              "relationName": "ном.контр",
+              "belongsTo": [],
+              "hidden": false,
+              "attrs": [
+                {
+                  "name": "контраг",
+                  "caption": "контраг",
+                  "hidden": false,
+                  "index": 3
+                }
+              ],
+              "index": -1,
+              "type": null,
+              "caption": "",
+              "name": "контр",
+              "relatedTo": "i-i-s-test22-контр",
+              "inverse": null
+            }
+          ],
+          "hidden": false,
+          "attrs": [
+            {
+              "name": "номном",
+              "caption": "номном",
+              "hidden": false,
+              "index": 2
+            }
+          ],
+          "index": 1,
+          "type": "default",
+          "caption": "ном",
+          "name": "ном",
+          "relatedTo": "i-i-s-test22-ном",
+          "inverse": null
+        }
+      ],
+      "hasMany": []
+    },
+    {
+      "name": "тестL",
+      "modelName": "i-i-s-test22-тест",
+      "attrs": [
+        {
+          "name": "цена",
+          "caption": "Цена",
+          "hidden": false,
+          "index": 0
+        }
+      ],
+      "belongsTo": [],
+      "hasMany": []
+    }
+  ],
+  "stored": true,
+  "offline": true,
+  "external": false
+}

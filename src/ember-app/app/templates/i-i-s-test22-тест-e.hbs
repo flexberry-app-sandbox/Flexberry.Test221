@@ -1,0 +1,73 @@
+<h3 class="ui header">{{t "forms.i-i-s-test22-тест-e.caption"}}</h3>
+
+<form class="ui form flexberry-vertical-form" role="form">
+  {{flexberry-error error=error}}
+  <div class="field">
+    <div class="flexberry-edit-panel">
+      {{#unless readonly}}
+        <button class="ui button save-button" {{action "save"}}>
+          {{t "forms.edit-form.save-button-text"}}
+        </button>
+        {{#unless model.isNew}}
+          <button class="ui button save-del-button" {{action "delete"}}>
+            {{t "forms.edit-form.delete-button-text"}}
+          </button>
+        {{/unless}}
+      {{/unless}}
+      <button class="ui button close-button" {{action "close"}}>
+        {{t "forms.edit-form.close-button-text"}}
+      </button>
+    </div>
+  </div>
+  <div class="field flexberry-validationsummary-container">
+    <div class="sixteen wide">
+      {{flexberry-validationsummary errors=(v-get validationObject "messages")}}
+    </div>
+  </div>
+  <div class="field">
+    {{flexberry-field
+      readonly=readonly
+      value=model.цена
+      class=(if (v-get validationModel "цена" "isInvalid") "error")
+      label=(t "forms.i-i-s-test22-тест-e.цена-caption")
+      data-test-i-i-s-test22-тест-e-цена=true
+    }}
+    {{flexberry-validationmessage error=(v-get validationModel "цена" "message")}}
+  </div>
+  <div class="field">
+    <label>{{t "forms.i-i-s-test22-тест-e.ном-caption"}}</label>
+    {{flexberry-lookup
+      choose="showLookupDialog"
+      remove="removeLookupValue"
+      value=model.ном
+      relationName="ном"
+      projection="номL"
+      title=(t "forms.i-i-s-test22-тест-e.ном-caption")
+      readonly=readonly
+      componentName="номLookup"
+      class=(if (v-get validationModel "ном" "isInvalid") "error")
+      data-test-i-i-s-test22-тест-e-ном=true
+    }}
+    {{flexberry-validationmessage error=(v-get validationModel "ном" "message")}}
+  </div>
+  <div class="field">
+    {{flexberry-field
+      readonly=true
+      value=model.ном.номном
+      class=(if (v-get validationModel.ном "номном" "isInvalid") "error")
+      label=(t "forms.i-i-s-test22-тест-e.ном.номном-caption")
+      data-test-i-i-s-test22-тест-e-ном-номном=true
+    }}
+    {{flexberry-validationmessage error=(v-get validationModel.ном "номном" "message")}}
+  </div>
+  <div class="field">
+    {{flexberry-field
+      readonly=true
+      value=model.ном.контр.контраг
+      class=(if (v-get validationModel.ном.контр "контраг" "isInvalid") "error")
+      label=(t "forms.i-i-s-test22-тест-e.ном.контр.контраг-caption")
+      data-test-i-i-s-test22-тест-e-ном-контр-контраг=true
+    }}
+    {{flexberry-validationmessage error=(v-get validationModel.ном.контр "контраг" "message")}}
+  </div>
+</form>

@@ -1,0 +1,15 @@
+﻿{
+  "newForm": "i-i-s-test22-ном-e",
+  "editForm": "i-i-s-test22-ном-e",
+  "external": false,
+  "caption": "Ном",
+  "name": "IISTest22номL",
+  "className": "номL",
+  "attrs": [],
+  "projections": [
+    {
+      "modelName": "i-i-s-test22-ном",
+      "modelProjection": "номL"
+    }
+  ]
+}

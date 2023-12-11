@@ -1,0 +1,36 @@
+﻿{
+  "applicationCaption": "Test22",
+  "applicationTitle": "Test22",
+  "items": [
+    {
+      "link": null,
+      "menuName": "new-folder1",
+      "caption": "NewFolder1",
+      "title": "NewFolder1",
+      "children": [
+        {
+          "link": "i-i-s-test22-контр-l",
+          "menuName": null,
+          "caption": "контрL",
+          "title": "Контр",
+          "children": null
+        },
+        {
+          "link": "i-i-s-test22-ном-l",
+          "menuName": null,
+          "caption": "номL",
+          "title": "Ном",
+          "children": null
+        },
+        {
+          "link": "i-i-s-test22-тест-l",
+          "menuName": null,
+          "caption": "тестL",
+          "title": "Тест",
+          "children": null
+        }
+      ]
+    }
+  ],
+  "mobile": true
+}

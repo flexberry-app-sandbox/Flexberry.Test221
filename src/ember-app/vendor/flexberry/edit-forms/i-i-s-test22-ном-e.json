@@ -1,0 +1,23 @@
+﻿{
+  "propertyLookup": [
+    {
+      "master": null,
+      "displayAttributeName": null,
+      "required": false,
+      "relationName": "контр",
+      "projection": "контрL",
+      "detailModelName": null
+    }
+  ],
+  "external": false,
+  "caption": "Ном",
+  "name": "IISTest22номE",
+  "className": "номE",
+  "attrs": [],
+  "projections": [
+    {
+      "modelName": "i-i-s-test22-ном",
+      "modelProjection": "номE"
+    }
+  ]
+}

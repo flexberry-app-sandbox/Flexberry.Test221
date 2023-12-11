@@ -1,0 +1,23 @@
+﻿{
+  "propertyLookup": [
+    {
+      "master": null,
+      "displayAttributeName": null,
+      "required": false,
+      "relationName": "ном",
+      "projection": "номL",
+      "detailModelName": null
+    }
+  ],
+  "external": false,
+  "caption": "Тест",
+  "name": "IISTest22тестE",
+  "className": "тестE",
+  "attrs": [],
+  "projections": [
+    {
+      "modelName": "i-i-s-test22-тест",
+      "modelProjection": "тестE"
+    }
+  ]
+}

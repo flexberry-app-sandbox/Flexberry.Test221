@@ -1,0 +1,84 @@
+﻿{
+  "name": "IISTest22ном",
+  "modelName": "i-i-s-test22-ном",
+  "className": "ном",
+  "nameSpace": "IIS.Test22",
+  "parentModelName": null,
+  "parentClassName": null,
+  "attrs": [
+    {
+      "name": "номном",
+      "type": "string",
+      "flexberryType": "string",
+      "notNull": false,
+      "defaultValue": "",
+      "stored": true,
+      "ordered": false
+    }
+  ],
+  "belongsTo": [
+    {
+      "polymorphic": false,
+      "presence": true,
+      "name": "контр",
+      "relatedTo": "i-i-s-test22-контр",
+      "inverse": null
+    }
+  ],
+  "hasMany": [],
+  "projections": [
+    {
+      "name": "номE",
+      "modelName": "i-i-s-test22-ном",
+      "attrs": [
+        {
+          "name": "номном",
+          "caption": "Номном",
+          "hidden": false,
+          "index": 0
+        }
+      ],
+      "belongsTo": [
+        {
+          "lookupValue": null,
+          "lookupValueField": null,
+          "relationName": "контр",
+          "belongsTo": [],
+          "hidden": false,
+          "attrs": [
+            {
+              "name": "контраг",
+              "caption": "контраг",
+              "hidden": false,
+              "index": 2
+            }
+          ],
+          "index": 1,
+          "type": "default",
+          "caption": "контр",
+          "name": "контр",
+          "relatedTo": "i-i-s-test22-контр",
+          "inverse": null
+        }
+      ],
+      "hasMany": []
+    },
+    {
+      "name": "номL",
+      "modelName": "i-i-s-test22-ном",
+      "attrs": [
+        {
+          "name": "номном",
+          "caption": "Номном",
+          "hidden": false,
+          "index": 0
+        }
+      ],
+      "belongsTo": [],
+      "hasMany": []
+    }
+  ],
+  "stored": true,
+  "offline": true,
+  "external": false
+}

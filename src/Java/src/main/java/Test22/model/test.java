@@ -25,6 +25,9 @@ public class test {
     @Column(name = "цена")
     private Integer цена;
 
+    @Column(name = "Хуй")
+    private String хуй;
+
     @EdmIgnore
     @Converter(converterClass = UUIDConverter.class, name = "nom")
     @Convert("nom")
@@ -54,6 +57,14 @@ public class test {
 
     public void setцена(Integer цена) {
       this.цена = цена;
+    }
+
+    public String getХуй() {
+      return хуй;
+    }
+
+    public void setХуй(String хуй) {
+      this.хуй = хуй;
     }
 
 

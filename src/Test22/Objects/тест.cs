@@ -31,9 +31,10 @@ namespace IIS.Test22
     [AccessType(ICSSoft.STORMNET.AccessType.none)]
     [View("тестE", new string[] {
             "цена as \'Цена\'",
-            "ном as \'ном\'",
+            "ном",
             "ном.номном as \'номном\'",
-            "ном.контр.контраг as \'контраг\'"})]
+            "ном.контр.контраг as \'контраг\'",
+            "Хуй"})]
     [View("тестL", new string[] {
             "цена as \'Цена\'"})]
     public class тест : ICSSoft.STORMNET.DataObject
@@ -41,12 +42,45 @@ namespace IIS.Test22
         
         private int fцена;
         
+        private IIS.Test22.хуй fХуй;
+        
         private IIS.Test22.ном fном;
         
         // *** Start programmer edit section *** (тест CustomMembers)
 
         // *** End programmer edit section *** (тест CustomMembers)
 
+        
+        /// <summary>
+        /// Хуй.
+        /// </summary>
+        // *** Start programmer edit section *** (тест.Хуй CustomAttributes)
+
+        // *** End programmer edit section *** (тест.Хуй CustomAttributes)
+        public virtual IIS.Test22.хуй Хуй
+        {
+            get
+            {
+                // *** Start programmer edit section *** (тест.Хуй Get start)
+
+                // *** End programmer edit section *** (тест.Хуй Get start)
+                IIS.Test22.хуй result = this.fХуй;
+                // *** Start programmer edit section *** (тест.Хуй Get end)
+
+                // *** End programmer edit section *** (тест.Хуй Get end)
+                return result;
+            }
+            set
+            {
+                // *** Start programmer edit section *** (тест.Хуй Set start)
+
+                // *** End programmer edit section *** (тест.Хуй Set start)
+                this.fХуй = value;
+                // *** Start programmer edit section *** (тест.Хуй Set end)
+
+                // *** End programmer edit section *** (тест.Хуй Set end)
+            }
+        }
         
         /// <summary>
         /// цена.

@@ -15,6 +15,8 @@ CREATE TABLE [тест] (
 
 	 [primaryKey] UNIQUEIDENTIFIER  NOT NULL,
 
+	 [Хуй] VARCHAR(4)  NULL,
+
 	 [цена] INT  NULL,
 
 	 [ном] UNIQUEIDENTIFIER  NOT NULL,

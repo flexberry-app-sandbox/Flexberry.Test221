@@ -7,6 +7,15 @@
   "parentClassName": null,
   "attrs": [
     {
+      "name": "хуй",
+      "type": "i-i-s-test22-хуй",
+      "flexberryType": "хуй",
+      "notNull": false,
+      "defaultValue": "",
+      "stored": true,
+      "ordered": false
+    },
+    {
       "name": "цена",
       "type": "number",
       "flexberryType": "int",
@@ -36,6 +45,12 @@
           "caption": "Цена",
           "hidden": false,
           "index": 0
+        },
+        {
+          "name": "хуй",
+          "caption": "",
+          "hidden": false,
+          "index": 4
         }
       ],
       "belongsTo": [
@@ -77,7 +92,7 @@
           ],
           "index": 1,
           "type": "default",
-          "caption": "ном",
+          "caption": "",
           "name": "ном",
           "relatedTo": "i-i-s-test22-ном",
           "inverse": null

@@ -20,6 +20,8 @@ CREATE TABLE "тест"
 
 	"цена" NUMBER(10) NULL,
 
+	"Хуй" NVARCHAR2(4) NULL,
+
 	"ном" RAW(16) NOT NULL,
 
 	 PRIMARY KEY ("primaryKey")

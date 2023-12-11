@@ -22,7 +22,7 @@ export default Controller.extend({
             link: 'i-i-s-test22-контр-l',
             caption: i18n.t('forms.application.sitemap.new-folder1.i-i-s-test22-контр-l.caption'),
             title: i18n.t('forms.application.sitemap.new-folder1.i-i-s-test22-контр-l.title'),
-            icon: 'table',
+            icon: 'building',
             children: null
           }, {
             link: 'i-i-s-test22-ном-l',
@@ -34,7 +34,7 @@ export default Controller.extend({
             link: 'i-i-s-test22-тест-l',
             caption: i18n.t('forms.application.sitemap.new-folder1.i-i-s-test22-тест-l.caption'),
             title: i18n.t('forms.application.sitemap.new-folder1.i-i-s-test22-тест-l.title'),
-            icon: 'tasks',
+            icon: 'chart bar',
             children: null
           }]
         }

@@ -9,6 +9,8 @@ moduleForModel('i-i-s-test22-контр', 'Unit | Serializer | i-i-s-test22-ко
     'transform:decimal',
     'transform:guid',
 
+    'transform:i-i-s-test22-хуй',
+
     'model:i-i-s-test22-контр',
     'model:i-i-s-test22-ном',
     'model:i-i-s-test22-тест',

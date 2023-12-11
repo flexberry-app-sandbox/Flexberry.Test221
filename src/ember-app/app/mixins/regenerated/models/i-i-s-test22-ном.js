@@ -28,7 +28,7 @@ export let ValidationRules = {
 export let defineProjections = function (modelClass) {
   modelClass.defineProjection('номE', 'i-i-s-test22-ном', {
     номном: attr('Номном', { index: 0 }),
-    контр: belongsTo('i-i-s-test22-контр', 'контр', {
+    контр: belongsTo('i-i-s-test22-контр', '', {
       контраг: attr('контраг', { index: 2 })
     }, { index: 1 })
   });

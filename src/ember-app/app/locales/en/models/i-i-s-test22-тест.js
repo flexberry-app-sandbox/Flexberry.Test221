@@ -15,6 +15,9 @@ export default {
             __caption__: 'контраг'
           }
         }
+      },
+      хуй: {
+        __caption__: ''
       }
     },
     тестL: {
@@ -24,6 +27,9 @@ export default {
     }
   },
   validations: {
+    хуй: {
+      __caption__: 'хуй'
+    },
     цена: {
       __caption__: 'Цена'
     },

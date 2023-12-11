@@ -31,7 +31,7 @@ namespace IIS.Test22
     [AccessType(ICSSoft.STORMNET.AccessType.none)]
     [View("номE", new string[] {
             "номном as \'Номном\'",
-            "контр as \'контр\'",
+            "контр",
             "контр.контраг as \'контраг\'"})]
     [View("номL", new string[] {
             "номном as \'Номном\'"})]

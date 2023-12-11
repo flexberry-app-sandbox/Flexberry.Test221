@@ -12,6 +12,7 @@ CREATE TABLE контр (
 CREATE TABLE тест (
  primaryKey UUID NOT NULL,
  цена INT NULL,
+ Хуй VARCHAR(4) NULL,
  ном UUID NOT NULL,
  PRIMARY KEY (primaryKey));
 

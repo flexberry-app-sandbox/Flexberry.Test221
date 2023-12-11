@@ -5,11 +5,18 @@ import { validator } from 'ember-cp-validations';
 import { attr, belongsTo, hasMany } from 'ember-flexberry-data/utils/attributes';
 
 export let Model = Mixin.create({
+  хуй: DS.attr('i-i-s-test22-хуй'),
   цена: DS.attr('number'),
   ном: DS.belongsTo('i-i-s-test22-ном', { inverse: null, async: false })
 });
 
 export let ValidationRules = {
+  хуй: {
+    descriptionKey: 'models.i-i-s-test22-тест.validations.хуй.__caption__',
+    validators: [
+      validator('ds-error'),
+    ],
+  },
   цена: {
     descriptionKey: 'models.i-i-s-test22-тест.validations.цена.__caption__',
     validators: [
@@ -29,12 +36,13 @@ export let ValidationRules = {
 export let defineProjections = function (modelClass) {
   modelClass.defineProjection('тестE', 'i-i-s-test22-тест', {
     цена: attr('Цена', { index: 0 }),
-    ном: belongsTo('i-i-s-test22-ном', 'ном', {
+    ном: belongsTo('i-i-s-test22-ном', '', {
       номном: attr('номном', { index: 2 }),
       контр: belongsTo('i-i-s-test22-контр', '', {
         контраг: attr('контраг', { index: 3 })
       }, { index: -1, hidden: true })
-    }, { index: 1 })
+    }, { index: 1 }),
+    хуй: attr('', { index: 4 })
   });
 
   modelClass.defineProjection('тестL', 'i-i-s-test22-тест', {
